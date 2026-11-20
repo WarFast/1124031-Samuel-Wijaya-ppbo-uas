@@ -30,4 +30,6 @@ public void showInsertform(){
     protected abstract String[] getFields();
     protected abstract T constructModelFromValues(String label, double[] values);
     protected abstract double[] extractValuesFromModel(T model);
+
+    protected abstract double[] extractValuesFromModel(GObjectFormturunan model);
 }

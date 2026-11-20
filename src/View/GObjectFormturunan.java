@@ -1,6 +1,8 @@
 package View;
 
-public class GObjectFormturunan extends GObjectForm<GObjectFormturunan>{
+import Models.GObject;
+
+public class GObjectFormturunan extends GObjectForm<GObject>{
     public GObjectFormturunan() {
 
     }
@@ -11,8 +13,13 @@ public class GObjectFormturunan extends GObjectForm<GObjectFormturunan>{
     }
 
     @Override
-    protected GObjectFormturunan constructModelFromValues(String label, double[] values) {
+    protected GObject constructModelFromValues(String label, double[] values) {
         return null;
+    }
+
+    @Override
+    protected double[] extractValuesFromModel(GObject model) {
+        return new double[0];
     }
 
     @Override
